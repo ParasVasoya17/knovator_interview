@@ -10,9 +10,11 @@ class SplashView extends GetView<SplashController> {
       init: SplashController(),
       assignId: true,
       builder: (controller) {
-        return Center(
-          child: Text(
-            AppStrings.thisIsSplash,
+        return const Scaffold(
+          body: Center(
+            child: Text(
+              AppStrings.thisIsSplash,
+            ),
           ),
         );
       },

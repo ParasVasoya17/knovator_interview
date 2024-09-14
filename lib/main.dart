@@ -27,11 +27,6 @@ class MyApp extends GetView<MainController> {
               debugShowCheckedModeBanner: false,
               initialRoute: AppPages.INITIAL,
               getPages: AppPages.routes,
-              builder: EasyLoading.init(
-                builder: (context, child) {
-                  return MediaQuery.withNoTextScaling(child: child!);
-                },
-              ),
             );
           },
         );
